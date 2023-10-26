@@ -25,10 +25,6 @@
     {
       "matches": ["https://www.globes.co.il/*"],
       "js": ["globes.js"]
-    },
-    {
-      "matches": ["https://www.youtube.com/*"],
-      "js": ["youtube.js"]
     }
   ]
 }

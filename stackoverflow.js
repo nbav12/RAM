@@ -1,5 +1,8 @@
-window.onload = () => {
-    // Ignore another classes, because the style may change
-    const cookiesPopup = document.getElementsByClassName("js-consent-banner")[0];
-    if (cookiesPopup) cookiesPopup.remove();
-}
+// No using of windows.onload(), because it will be called very late due to a lot of fetches
+const intervalID = setInterval(() => {
+    const cookiesPopup = document.getElementById("onetrust-consent-sdk");
+    if (cookiesPopup) {
+        cookiesPopup.remove();
+        clearInterval(intervalID);
+    }
+}, 500);

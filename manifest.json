@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "RAM",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "RAM, Remove Annoying Messages - Extension for remove cookies messages, sign-in modals etc.",
   "author": "Nbav12",
   "content_scripts": [
@@ -25,6 +25,10 @@
     {
       "matches": ["https://www.globes.co.il/*"],
       "js": ["globes.js"]
+    },
+    {
+      "matches": ["https://www.techtarget.com/*"],
+      "js": ["techtarget.js"]
     }
   ]
 }
